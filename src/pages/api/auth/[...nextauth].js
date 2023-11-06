@@ -10,15 +10,8 @@ export const authOptions = {
       clientSecret: process.env.GOOGLE_CLIENT_SECRET
 
     })
-    ,
-    FacebookProvider({
-      clientId: process.env.CLIENT_ID,
-      clientSecret: process.env.CLIENT_SECRET,
-
-    })
-    // ...add more providers here
   ],
-
+  secret: process.env.NEXTAUTH_SECRET
 }
 
 export default NextAuth(authOptions)
